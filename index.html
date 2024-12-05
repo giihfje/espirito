@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espírito Western - Loja de Botas Texanas</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Espírito Western</div>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li class="cart"><a href="#carrinho">Carrinho (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos" class="product-section">
+            <h2>Nossas Botas Texanas</h2>
+            <div class="product-grid">
+                <!-- Produto 1 -->
+                <div class="product-card">
+                    <img src="imagens.png/6779fea4-a658-4557-a388-69ab4506b6c1.jpeg" alt="Bota Texana Marrom">
+                    <h3>Bota Texana Marrom</h3>
+                    <p class="price">R$ 499,99</p>
+                    <div class="sizes">
+                        <label for="size1">Tamanho:</label>
+                        <select id="size1">
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Bota Texana Marrom', 499.99, 'size1')">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product-card">
+                    <img src="imagens.png/Botas Cinceladas Para Mujer - 7 _ B _ Brown.jpeg" alt="Bota Texana Preta">
+                    <h3>Bota Texana Preta</h3>
+                    <p class="price">R$ 549,99</p>
+                    <div class="sizes">
+                        <label for="size2">Tamanho:</label>
+                        <select id="size2">
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart('Bota Texana Preta', 549.99, 'size2')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrinho">
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items">
+                <p>O carrinho está vazio.</p>
+            </div>
+            <p class="total">Total: R$ <span id="total-price">0.00</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Espírito Western. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
